@@ -1,15 +1,15 @@
 {
-    "version": 2,
+    "version": 3,
     "builds": [
         {
-            "src": "frontend/public/index.html",
-            "use": "@vercel/static-asset-handler"
+            "src": "package.json",
+            "use": "@vercel/node"
         }
     ],
     "routes": [
         {
             "src": "/(.*)",
-            "dest": "/frontend/public/index.html"
+            "dest": "/index.html"
         }
     ]
 }
